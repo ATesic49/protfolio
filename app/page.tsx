@@ -5,6 +5,8 @@ import Citat from './components/Citat'
 import Stats from './components/Stats'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
+import Contact from './components/Contact'
+import Testimonials from './components/Testimonials'
 export default function Home() {
   return (
     <main >
@@ -15,6 +17,8 @@ export default function Home() {
       <Stats />
       <Skills />
       <Projects />
+      <Contact />
+      <Testimonials />
       <div>
       </div>
     </main>
