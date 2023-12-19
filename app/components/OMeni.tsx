@@ -6,7 +6,7 @@ import Acalegenda from '@/public/imgs/acalegenda.jpg';
 
 function OMeni() {
     return (
-        <div className='min-h-[50vh] py-[5rem] md:px-0 px-[2em] bg-cyan-50 grid md:grid-cols-2 justify-center gap-10'  >
+        <section title='oMeni' id='OMeni' className='min-h-[50vh] py-[5rem] md:px-0 px-[2em] bg-cyan-50 grid md:grid-cols-2 justify-center gap-10'  >
 
             <h2 className='text-5xl md:text-6xl font-bold   h-full  z-20 bg-clip-text text-transparent bg-gradient-to-tr  from-cyan-500 to-pink-400 text-left md:pl-16'>
                 O meni
@@ -34,7 +34,7 @@ function OMeni() {
 
             {/* </div> */}
 
-        </div>
+        </section>
 
     )
 }

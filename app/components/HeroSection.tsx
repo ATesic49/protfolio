@@ -4,6 +4,7 @@ import React, { useRef, useState } from 'react';
 import Hero from '@/public/imgs/Hero.jpeg';
 import { motion } from 'framer-motion';
 import { useEffect } from 'react';
+import { Link, animateScroll as scroll } from "react-scroll";
 const HeroSection: React.FC = () => {
     const [currentUrl, setUrl] = useState('');
     useEffect(() => {
@@ -18,6 +19,8 @@ const HeroSection: React.FC = () => {
         aTag.remove();
 
     }
+
+
     return (
         <div className='min-h-[100vh] pt-20 md:pt-0 overflow-hidden items-center justify-center relative'>
             <Image alt='' src={Hero} className='absolute right-0 h-full w-auto brightness-75 rounded-lg' priority></Image>
@@ -44,12 +47,22 @@ const HeroSection: React.FC = () => {
                         </svg>
 
                     </button>
-                    <button className='bg-white text-cyan-500  rounded-md px-4 py-2 hover:bg-cyan-50'>Learn More</button>
+
+                    <Link to='OMeni'
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+
+                        className='bg-white text-cyan-500  rounded-md px-4 py-2 hover:bg-cyan-50 cursor-pointer'>Počni
+
+                        <svg className='w-6 h-6 inline m-0  px-1 ' xmlns="http://www.w3.org/2000/svg" version="1.1" width="25" height="25" x="0" y="0" viewBox="0 0 128 128"  ><g><path d="M64 88a3.988 3.988 0 0 1-2.828-1.172l-40-40c-1.563-1.563-1.563-4.094 0-5.656s4.094-1.563 5.656 0L64 78.344l37.172-37.172c1.563-1.563 4.094-1.563 5.656 0s1.563 4.094 0 5.656l-40 40A3.988 3.988 0 0 1 64 88z" fill="#06b6d4" opacity="1" data-original="#000000" ></path></g></svg>
+
+                    </Link>
 
                 </motion.div>
             </div>
 
-        </div>
+        </div >
     );
 };
 

@@ -13,6 +13,7 @@ export default function Home() {
 
       <HeroSection />
       <OMeni />
+      
       <Citat />
       <Stats />
       <Skills />
