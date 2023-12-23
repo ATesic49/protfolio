@@ -1,5 +1,7 @@
+'use client'
 import Image from 'next/image'
 import React from 'react'
+import { Link } from 'react-scroll'
 
 function Navbar() {
     return (
@@ -18,9 +20,28 @@ function Navbar() {
                     </g>
                 </svg>
 
-                <a href="" className='text-sm  md:text-lg text-gray-600 hover:text-black duration-200'>Pocetna</a>
-                <a href="" className='text-sm  md:text-lg text-gray-600 hover:text-black duration-200'>Pocetna</a>
-                <a href="" className='text-sm  md:text-lg text-gray-600 hover:text-black duration-200'>Pocetna</a>
+                <Link to='Pocetna'
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                    className='text-sm  cursor-pointer md:text-lg text-gray-600 hover:text-black duration-200   '>Pocetna</Link>
+
+
+
+
+                <Link to='Projekti'
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                    className='text-sm  md:text-lg cursor-pointer text-gray-600 hover:text-black duration-200   '>Projekti</Link>
+
+                <Link to='Kontakt'
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                    className='text-sm  md:text-lg text-gray-600 cursor-pointer hover:text-black duration-200   '>Kontakt</Link>
+
+
 
 
             </nav>

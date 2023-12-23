@@ -5,7 +5,7 @@ function Testimonials() {
     return (
         <section className=' flex flex-col py-10 md:py-24 justify-center items-center gap-10  '>
             <div className='flex flex-col justify-center items-center gap-4  '>
-                <h2 className='text-6xl  bg-clip-text font-extrabold text-transparent bg-gradient-to-tr from-pink-200 capitalize to-cyan-300 max-w-[10em] text-center '>Some fake testimonials</h2>
+                <h2 className=' text-2xl md:text-6xl  bg-clip-text font-extrabold text-transparent bg-gradient-to-tr from-pink-200 capitalize to-cyan-300 max-w-[10em] text-center '>Some fake testimonials</h2>
                 <p className='text-gray-400'>To show off my skills</p>
             </div>
             <div className='grid md:w-10/12 w-11/12 gap-10 lg:grid-cols-3 '>
@@ -26,7 +26,7 @@ function Testimonials() {
                 </div>
 
                 <div className='h-auto bg-red-300 flex flex-col justify-start items-start border border-gray-300 p-4  rounded-lg gap-4' >
-                    <h3 className='text-2xl text-neutral-800 font-bold '>Najbolja stvar koju sam uradio</h3>
+                    <h3 className='text-2xl text-neutral-100 font-bold '>Najbolja stvar koju sam uradio</h3>
                     <p className="before:content-[',,'] after:text-xl before:text-xl after:content-[',,'] italic  text-sm lg:text-base text-gray-100 font-light ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur molestias dolorum aspernatur.  Ab Lorem ipsum dolor!
                         Lorem
                     </p>
@@ -55,7 +55,7 @@ function Testimonials() {
                     </div>
                 </div>
                 <div className=' lg:col-span-2   flex flex-col justify-start items-start border border-gray-300 p-4 bg-blue-300 rounded-lg gap-4 '>
-                    <h3 className='text-2xl text-neutral-800 font-bold '>Najbolja stvar koju sam uradio</h3>
+                    <h3 className='text-2xl text-neutral-100 font-bold '>Najbolja stvar koju sam uradio</h3>
                     <p className="before:content-[',,'] after:text-xl before:text-xl after:content-[',,'] italic text-sm  lg:text-base text-gray-100 font-light ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur molestias dolorum aspernatur.Ab Lorem ipsum dolor!
                         Lorem
                     </p>

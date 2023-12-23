@@ -10,7 +10,7 @@ import { useRouter } from 'next/navigation'
 function Projects() {
     const router = useRouter()
     return (
-        <div className='flex flex-col gap-20 justify-center items-center py-24'>
+        <div className='flex flex-col gap-20 justify-center items-center py-24' id='Projekti'>
             <h2 className='text-4xl font-bold md:text-6xl bg-clip-text text-transparent bg-gradient-to-tr from-pink-200 to-cyan-300'>Portfolio:</h2>
 
 

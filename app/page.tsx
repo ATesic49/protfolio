@@ -10,10 +10,9 @@ import Testimonials from './components/Testimonials'
 export default function Home() {
   return (
     <main >
-
+        
       <HeroSection />
       <OMeni />
-      
       <Citat />
       <Stats />
       <Skills />
