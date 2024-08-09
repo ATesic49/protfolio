@@ -1,42 +1,45 @@
-import Image from 'next/image'
-import React from 'react'
-import Hero from '@/public/imgs/Hero.jpeg';
-import Acalegenda from '@/public/imgs/acalegenda.jpg';
-
+import Image from "next/image";
+import React from "react";
+import Hero from "@/public/imgs/Hero.jpeg";
+import Acalegenda from "@/public/imgs/acalegenda.jpg";
 
 function OMeni() {
-    return (
-        <section title='oMeni' id='OMeni' className='min-h-[50vh] py-[5rem] md:px-0 px-[2em] bg-cyan-50 grid md:grid-cols-2 justify-center gap-10'  >
+  return (
+    <section
+      title="oMeni"
+      id="OMeni"
+      className="grid min-h-[50vh] items-start justify-start gap-10 bg-cyan-50 px-[2em] py-[5rem] md:grid-cols-2 md:px-0"
+    >
+      <h2 className="z-20 h-full bg-gradient-to-tr from-cyan-500 to-pink-400 bg-clip-text text-left text-5xl font-bold text-transparent md:pl-16 md:text-6xl">
+        About me
+      </h2>
+      <div className="hidden md:block"></div>
+      {/* <div className=' flex justify-around items-center'> */}
 
-            <h2 className='text-5xl md:text-6xl font-bold   h-full  z-20 bg-clip-text text-transparent bg-gradient-to-tr  from-cyan-500 to-pink-400 text-left md:pl-16'>
-                O meni
-            </h2>
-            <div className='md:block hidden'></div>
-            {/* <div className=' flex justify-around items-center'> */}
+      <p className="my-auto text-left text-sm text-gray-500 md:pl-10 md:text-lg">
+        My name is Aleksa Tesic. I am a{" "}
+        <span className="mx-1 underline">NextJs</span> and{" "}
+        <span className="mx-1 underline">React</span> web developer with over 3
+        years of experience.
+        <span className="block h-[.5em]"> </span>I have worked on numerous
+        projects, including web shops, restaurant websites, web games,
+        e-commerce and business sites.
+        <span className="block h-[.5em]"> </span>I have a lot of experience, and
+        was able to get a grasp on the fundamentals of UX/UI design.
+        <span className="block h-[.5em]"> </span>The thing that sepparates me
+        from the crowd is that I am a really ambitious learner, who sees every
+        obsticle as a challenge.
+      </p>
 
-            <p className='text-gray-500 md:pl-10 text-sm  md:text-lg text-left my-auto '>
-                Moje ime je Aleksa Tesic, i mogu da se pohvalim sa 2 godine iskustva u izradi web sajtova.
-                <span className='h-[.5em] block'> </span>
-                Radio sam na raznim projektima, od malih sajtova za lokalne firme, do velikih sajtova za velike kompanije.
-                <span className='h-[.5em] block'> </span>
+      <Image
+        src={Acalegenda}
+        className="mx-auto my-auto w-3/4 rounded shadow-2xl brightness-110 sm:w-2/3"
+        alt=""
+      ></Image>
 
-                Imam iskustva u radu sa React-om, Next.js-om, TailwindCSS-om, kao i sa Node.js-om i Express-om.
-
-                Pored toga, volim da ucim, da se usavrsavam i da radim na sebi.
-
-
-            </p>
-
-            <Image src={Acalegenda} className=' w-3/4 sm:w-2/3 mx-auto my-auto rounded brightness-110 shadow-2xl' alt=''></Image>
-
-
-
-
-            {/* </div> */}
-
-        </section>
-
-    )
+      {/* </div> */}
+    </section>
+  );
 }
 
-export default OMeni
+export default OMeni;

@@ -3,10 +3,10 @@ import nodemailer from "nodemailer";
 export async function POST(request: Request) {
   //get data from env
   const pass = process.env.APP_PASWORD;
-
-  const { ime, prezime, email, poruka, brojTelefona } = await request.json();
+  const body = await request.json();
+  const { ime, prezime, email, poruka, brojTelefona } = body;
   const transporter = nodemailer.createTransport({
-    service: "Gmail",
+    service: "gmail",
     auth: {
       user: "atesic7@gmail.com",
       pass: pass,
